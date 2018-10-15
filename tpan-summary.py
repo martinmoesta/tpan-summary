@@ -61,15 +61,15 @@ def main():
         if customer.lower() in str(row[0]).lower():
             #print("Found the customer!")
             good_row = row
-            ts_version = good_row[5]
-            client_num = good_row[6]
-            active_client_num = good_row[7]
-            leader_percent = good_row[8]
-            fifty_t = good_row[14]
-            ninety_t = good_row[15]
-            tail_t = good_row[16]
-            tail_p = good_row[17]
-            findings = good_row[18]
+            ts_version = good_row[8]
+            client_num = good_row[9]
+            active_client_num = good_row[10]
+            leader_percent = good_row[11]
+            fifty_t = good_row[17]
+            ninety_t = good_row[18]
+            tail_t = good_row[19]
+            tail_p = good_row[20]
+            findings = good_row[21]
             #print(good_row)
             break;
     
