@@ -49,8 +49,10 @@ def main():
     service = build('sheets', 'v4', http=creds.authorize(Http()))
 
     # Find and scrape the spreadsheet
-    SPREADSHEET_ID = '1O7opJmfbTCrI8jKh2_obyxKYXZ9SfqGFh03qh1g3sX4'
-    RANGE_NAME = 'Broken out Data!A2:Z100'
+    SPREADSHEET_ID = '1bSkXfJTuNOEPQvjKSJmTxb_MYcR0537si0LOjZW0W-U'
+    #SPREADSHEET_ID_OLD = '1O7opJmfbTCrI8jKh2_obyxKYXZ9SfqGFh03qh1g3sX4'
+    RANGE_NAME = 'TPAN!A2:Z1000'
+    #RANGE_NAME_OLD = 'Broken out Data!A2:Z100'
     result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID,
                                                 range=RANGE_NAME).execute()
     values = result.get('values', [])
